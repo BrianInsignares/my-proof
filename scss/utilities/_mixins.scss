@@ -1,0 +1,14 @@
+@mixin flex ($width, $height, $background-color, $display, $justifyc, $aligni){ /*flex aplicado al header*/
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    display: $display;
+    justify-content: $justifyc;
+    align-items: $aligni;
+}
+
+@mixin parrafe ($fontsize, $fontfamily, $color){
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    color: $color;
+}
