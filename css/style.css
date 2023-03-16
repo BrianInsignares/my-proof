@@ -469,7 +469,12 @@ li {
     flex-direction: column; }
   /*STREAMING*/
   .navbarstre {
-    height: 400px; } }
+    height: 400px; }
+  /*TOURS*/
+  .tourinicio {
+    flex-direction: column; }
+  .navbartour {
+    justify-content: center; } }
 
 @media (max-width: 425px) {
   .parrafe {
@@ -533,7 +538,10 @@ li {
   .parrafeemail {
     font-size: 18px;
     font-family: "K2D", sans-serif;
-    color: none; } }
+    color: none; }
+  /*TOURS*/
+  .toursindex img {
+    width: 100%; } }
 
 @media (max-width: 320px) {
   /*INDEX*/

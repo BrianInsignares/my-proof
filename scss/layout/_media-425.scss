@@ -61,6 +61,11 @@
     .parrafeemail {
         @include parrafo (18px, $fontfamilymedia, none)
     }
+
+            /*TOURS*/
+    .toursindex img {
+        width: 100%;
+    }
     
 }
 
