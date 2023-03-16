@@ -7,8 +7,36 @@
     align-items: $aligni;
 }
 
-@mixin parrafe ($fontsize, $fontfamily, $color){
+@mixin parrafo ($fontsize, $fontfamily, $color){
     font-size: $fontsize;
     font-family: $fontfamily;
     color: $color;
+}
+
+@mixin grid ($display, $width, $height, $gridtemcol, $gridtemrow){
+    display: $display;
+    width: $width;
+    height: $height;
+    grid-template-columns: $gridtemcol;
+    grid-template-rows: $gridtemrow;
+}
+
+@mixin grid-item ($gridcolst, $gridcolen, $gridrowsta, $gridrowend) {
+    grid-column-start: $gridcolst;
+    grid-column-end: $gridcolen;
+    grid-row-start: $gridrowsta;
+    grid-row-end: $gridrowend;
+}
+
+@mixin diseñoparrafo ($fontweight, $textdecoraline, $textdecorastyle, $textdecoracolor, $paddingbo){
+    font-weight: $fontweight;
+    text-decoration-line: $textdecoraline;
+    text-decoration-style: $textdecorastyle;
+    text-decoration-color: $textdecoracolor;
+    padding-bottom: $paddingbo;
+}
+
+@mixin flexmedia ($displayy, $flexdirection) {
+    display: $displayy;
+    flex-direction: $flexdirection;
 }

@@ -1,0 +1,30 @@
+@media (max-width: 320px){
+
+    /*INDEX*/
+.maingrid {
+    height: 2200px;
+}
+
+.item2 {
+    display: flex; /*NO LO TOMA*/
+    flex-direction: column;
+}
+
+.imagenindex { /*NO LO TOMA*/
+    width: 100px;
+    height: 300px;
+}
+            /*ALBUM*/
+    
+    .albumgrid {
+        height: 4100px;
+    }
+
+            /*STREAMING*/
+    .navbarstre {
+        width: 100%;
+        height: 140px;
+        font-size: 20px;
+    }
+}
+

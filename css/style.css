@@ -1,11 +1,12 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 .header-index h1 {
-  font-family: 'Roboto Mono', monospace;
   font-size: 60px;
+  font-family: "Roboto Mono" monospace;
   color: #fffffe; }
 
 #tittle {
@@ -13,8 +14,8 @@
   align-items: center; }
 
 .parrafe {
-  font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
   color: #2cb67d; }
 
 .header-index {
@@ -24,11 +25,533 @@
   background-color: #16161a;
   display: flex;
   justify-content: space-between;
-  align-items: normal;
-  /*
+  align-items: normal; }
+
+main {
+  background-color: #3C71CC; }
+
+/*MAIN DEL INDEX */
+.card {
+  border-radius: 50px; }
+
+.textindex {
+  font-size: 25px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a;
+  text-align: center; }
+
+.textindex::first-letter {
+  color: #2929f0;
+  font-size: 60px; }
+
+.imageindex1 {
+  border-radius: 40px; }
+
+.maingrid {
+  display: grid;
+  width: 100%;
+  height: 1200px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr); }
+
+.item1 {
+  /*navbar*/
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 8;
+  align-self: center; }
+
+.item2 {
+  /*imaganes de artistas*/
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /*flex aplicado al header*/
+  width: none;
+  height: 150px;
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.item3 {
+  /*textoprincipal*/
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5; }
+
+.item4 {
+  /* imagen principal*/
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 7; }
+
+.item5 {
+  /*texto de fondo*/
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 8; }
+
+.item6 {
+  /*imagen de fondo*/
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 8;
+  grid-row-end: 9; }
+
+/*Main de Album*/
+.albumtext1 h1 {
+  font-size: 30px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a;
+  text-align: center; }
+
+.albumtext1 h1::first-letter {
+  font-size: 60px;
+  font-family: none;
+  color: #2929f0; }
+
+.alcar p {
+  /*titulo del album*/
+  font-size: 30 px;
+  font-family: "Roboto Mono" monospace;
+  color: #2cb67d; }
+
+.alcar article {
+  font-size: 20px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a; }
+
+.albumgrid {
+  /*grid de la pagina album*/
+  display: grid;
+  width: 100%;
+  height: 2000px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+
+.albumnav {
+  /* nav bar de la pagina album*/
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.albuminicio {
+  /* introduccion de la pagina album*/
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+/* card o secciones de la pagina album */
+.alcar {
+  /*Sección secunario dnde se desgloza el album, su imagen y breve reseña musical*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 1px 30px; }
+
+.albumcard1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.albumcard2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4; }
+
+.albumcard3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5; }
+
+.albumcard4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6; }
+
+.albumcard5 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7; }
+
+.albuminicio {
+  /*Sección principal de la pagina: Album*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px; }
+
+/*MAIN de Records*/
+.record-index h1 {
+  font-size: 38px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a; }
+
+.record-index h1::first-letter {
+  font-size: 60px;
+  font-family: none;
+  color: #2929f0; }
+
+.record-index article {
+  font-size: 30px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a; }
+
+.imgrecordinicio {
+  /*imagen del inicio*/
+  width: 15%;
+  border-radius: 10%; }
+
+.record-index {
+  /*Grid de la pagina record*/
+  display: grid;
+  width: 100%;
+  height: none;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
+
+.navbar-record {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.navbar-record {
+  padding-right: 50px;
+  color: #16161a; }
+
+.record-inicio {
+  /*flex aplicado al header*/
+  width: 100%;
+  height: 200px;
+  background-color: none;
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  gap: 20px;
+  flex-direction: row;
+  align-self: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.cardrecord-1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 30px;
+  padding-bottom: none; }
+
+.cardrecord-2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  padding: 30px;
+  padding-bottom: none; }
+
+.cardrecord-3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: 30px;
+  padding-bottom: none; }
+
+.record-index div img {
+  border-radius: 15%; }
+
+/*MAIN de Tours*/
+.tourinicio {
+  /*flex aplicado al header*/
+  width: none;
+  height: none;
+  background-color: #8a94ac;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+  padding: 30px; }
+
+.tourinicio img {
+  border-radius: 20px; }
+
+.tourindex h1 {
+  font-size: 50px;
+  font-family: "Roboto Mono" monospace;
+  color: #16161a;
+  font-weight: 20px;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: #3c4049;
+  padding-bottom: 30px; }
+
+.tourindex article {
+  font-size: 30px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: none; }
+
+.tourindex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 20px;
+  padding-right: 30px; }
+
+/*MAIN de Streaming*/
+.footerstreaming {
+  height: 100%; }
+
+/*Estilos generales del li*/
+li a {
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none;
+  /*el list-style aplicarlo solo a la list, no al anchors*/ }
+
+.navbar {
+  font-size: 40px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a; }
+
+.navbar {
+  /*flex aplicado al header*/
+  width: 260px;
+  height: 500px;
+  background-color: #364DCC;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.navbar {
+  flex-direction: column;
+  gap: 20px 20px;
+  padding-left: 20px; }
+
+.footer-index {
+  width: 100%;
+  height: 150px;
+  background-color: #72757e; }
+
+.parrafeemail {
+  font-size: 30px;
+  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  color: #16161a;
+  display: flex;
+  justify-content: end; }
+
+.logosfooter {
+  display: flex;
+  flex-direction: row;
+  gap: 15px 5px; }
+  .logosfooter li a {
+    text-decoration: none; }
+  .logosfooter li {
+    list-style: none; }
+
+@media (max-width: 1024px) {
+  /*INDEX*/
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 6; }
+  .imageindex1 {
+    height: 500px; }
+  /*ALBUM*/
+  .albuminicio h1 {
+    font-size: 30px; }
+  .alcar p {
+    font-size: 40px;
+    font-family: none;
+    color: none; }
+  .alcar article {
+    font-size: 25px;
+    font-family: none;
+    color: none; }
+  /*RECORDS*/
+  .imgrecordinicio {
+    height: 200px; }
+  .record-inicio h1 {
+    font-size: 30px;
+    font-family: "K2D", sans-serif;
+    color: none; }
+  /*STREAMING*/
+  .footerstreaming {
+    height: 200px; } }
+
+@media (max-width: 768px) {
+  /*INDEX*/
+  .navbar {
+    width: 200px;
+    height: 350px;
+    font-size: 30px; }
+  .textindex {
+    font-size: 20;
+    font-family: "K2D", sans-serif;
+    color: none; }
+  .maingrid {
+    display: grid;
     width: 100%;
-    height: 300px;
-    background-color: #16161a;
+    height: 1300px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr); }
+  .item1 {
+    /*navbar*/
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .item2 {
+    /*imaganes de artistas*/
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 50px; }
+  .item3 {
+    /*textoprincipal*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5; }
+  .item4 {
+    /* imagen principal*/
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5; }
+  .item5 {
+    /*texto de fondo*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7; }
+  .item6 {
+    /*imagen de fondo*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8; }
+  /*ALBUM*/
+  .albumnav {
+    height: 600px;
+    /*NO LO TOMA*/ }
+  .albuminicio h1 {
+    font-size: 20px; }
+  /*RECORDS*/
+  .record-index {
+    /*flex aplicado al header*/
+    width: 100%;
+    height: 2600px;
+    background-color: none;
     display: flex;
-    justify-content: space-between;
-    */ }
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  /*STREAMING*/
+  .navbarstre {
+    height: 400px; } }
+
+@media (max-width: 425px) {
+  .parrafe {
+    font-size: 16px;
+    font-family: "K2D", sans-serif;
+    color: none; }
+  .header-index h1 {
+    font-size: 40px; }
+  .maingrid {
+    /*flex aplicado al header*/
+    width: 100%;
+    height: 2000px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px; }
+  .textindexs {
+    font-size: 20px;
+    font-family: "K2D", sans-serif;
+    color: #16161a; }
+  /*ALBUM*/
+  .albumgrid {
+    /*flex aplicado al header*/
+    width: 100%;
+    height: 3400px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .albuminicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .alcar {
+    display: flex;
+    flex-direction: column; }
+  /*RECORD*/
+  .record-index {
+    height: 4000px;
+    gap: 20px; }
+  .record-index article {
+    font-size: 15;
+    font-family: "K2D", sans-serif;
+    color: none; }
+  .navbar {
+    font-size: 42px;
+    width: 300px;
+    height: 500px;
+    padding-top: none;
+    /*TOMA MUCHO ESPACIO*/ }
+  .record-inicio {
+    display: flex;
+    flex-direction: column; }
+  .imgrecordinicio {
+    width: 60px;
+    height: 60px; }
+  /*STREAMING*/
+  .parrafeemail {
+    font-size: 18px;
+    font-family: "K2D", sans-serif;
+    color: none; } }
+
+@media (max-width: 320px) {
+  /*INDEX*/
+  .maingrid {
+    height: 2200px; }
+  .item2 {
+    display: flex;
+    /*NO LO TOMA*/
+    flex-direction: column; }
+  .imagenindex {
+    /*NO LO TOMA*/
+    width: 100px;
+    height: 300px; }
+  /*ALBUM*/
+  .albumgrid {
+    height: 4100px; }
+  /*STREAMING*/
+  .navbarstre {
+    width: 100%;
+    height: 140px;
+    font-size: 20px; } }

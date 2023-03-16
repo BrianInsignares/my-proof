@@ -1,0 +1,59 @@
+@media (max-width: 768px){
+
+            /*INDEX*/
+    
+    .navbar {
+        width: 200px;
+        height: 350px;
+        font-size: 30px; 
+    }
+
+    .textindex { 
+        @include parrafo (20, $fontfamilymedia, none)
+    }
+    .maingrid {
+        @include grid (grid, 100%, 1300px, repeat(4, 1fr), repeat(7, 1fr))}
+
+    .item1 {
+        /*navbar*/ @include grid-item (1, 2, 1, 3);}
+        
+    .item2 {
+        /*imaganes de artistas*/ @include grid-item (2, 5, 2, 3);
+        height: 50px;}
+        
+    .item3 {/*textoprincipal*/ 
+        @include grid-item (1, 3, 3, 5);
+        }
+        
+    .item4 {
+        /* imagen principal*/ @include grid-item (3, 5, 3, 5)}
+        
+    .item5 { 
+        /*texto de fondo*/ @include grid-item  (1, 3, 6, 7)}
+        
+    .item6 { 
+        /*imagen de fondo*/ @include grid-item (1, 3, 7 , 8)}
+        
+            /*ALBUM*/
+    
+        .albumnav {
+            height: 600px; /*NO LO TOMA*/
+        }
+        .albuminicio h1{
+            font-size: 20px;
+        }
+
+
+            /*RECORDS*/
+    
+    .record-index{
+        @include flex(100%, 2600px, none, flex, center, center);
+        flex-direction: column;
+    }
+
+            /*STREAMING*/
+    .navbarstre {
+        height: 400px;
+    }
+
+}

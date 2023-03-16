@@ -58,7 +58,7 @@ li  {
 
 /*DISEÑOS POR PAGINA */
 
-/* 1 INDEX*/
+/* 1 INDEX 
 
 .card{
     border-radius: 50px;
@@ -88,7 +88,7 @@ li  {
     grid-template-rows: repeat(8, 1fr) ;
 }
 
-.item1 { /*navbar*/
+.item1 { /*navbar
 color: #3c4049;
 grid-column: 1 / 2 ;
 grid-row: 1 / 8 ;
@@ -96,7 +96,7 @@ align-self: center;
 
 }
 
-.item2 { /*imaganes de artistas*/
+.item2 { /*imaganes de artistas
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -105,29 +105,30 @@ grid-column: 2 / 7;
 grid-row: 1 / 2;
 }
 
-.item3 { /*textoprincipal */
+.item3 { /*textoprincipal 
 grid-column: 2 / 4;
 grid-row: 4 / 5;
 }
 
-.item4 {/* imagen principal */
+.item4 {/* imagen principal 
 grid-column: 5 / 7;
 grid-row: 2 / 7;
 }
 
-.item5 { /*texto de fondo*/
+.item5 { /*texto de fondo
 grid-column: 4 / 5;
 grid-row: 6 / 8;
 }
 
-.item6 { /*imagen de fondo*/
+.item6 { /*imagen de fondo
 grid-column: 5 / 6;
 grid-row: 8 / 9;
 }
+*/
 
 /* Albums */
 
-.albumtext1 h1 {
+/*.albumtext1 h1 {
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
     font-size: 30px;
     text-align: center;
@@ -138,7 +139,7 @@ grid-row: 8 / 9;
     font-size: 60px;
 }
 
-.alcar p { /*titulo del album*/
+.alcar p { /*titulo del album
     font-family: 'Roboto Mono', monospace; 
     font-size: 30px;
     color: #2cb67d;
@@ -150,7 +151,7 @@ grid-row: 8 / 9;
     color: #16161a;
 }
 
-.albumgrid { /*grid de la pagina album*/
+.albumgrid { /*grid de la pagina album
     background-color: #d5dbe4 ;
     display: grid;
     width: 100%;
@@ -158,17 +159,17 @@ grid-row: 8 / 9;
     grid-template-rows: repeat(8, 1fr);
 }
 
-.albumnav { /* nav bar de la pagina album */
+.albumnav { /* nav bar de la pagina album 
     grid-column: 1 / 2;
     grid-row: 1 / 4;
 }
 
-.albuminicio { /* introduccion de la pagina album */
+.albuminicio { /* introduccion de la pagina album 
     grid-column: 2 / 4;
     grid-row: 2 / 4;
 }
 
-/* card o secciones de la pagina album */
+/* card o secciones de la pagina album 
 
 .albumcard1 {
     grid-column: 1 / 4 ;
@@ -191,22 +192,21 @@ grid-row: 8 / 9;
     grid-row: 8 / 9 ;
 }
 
-.albuminicio { /*Sección principal de la pagina: Album*/
+.albuminicio { /*Sección principal de la pagina: Album
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
     padding: 20px;
 }
-
-.alcar { /*Sección secundario donde se desgloza el album, su imagen y breve reseña musical*/
+.alcar { /*Sección secundario donde se desgloza el album, su imagen y breve reseña musical
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
     padding: 1px 30px; 
-    }
+    }*/
 
 /*Records*/
 
