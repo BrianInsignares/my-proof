@@ -3,67 +3,82 @@ main {
 }
 
             /*MAIN DEL INDEX */
-    .card{ border-radius: 50px;}
+    .card{ border-radius: 50px;
+    }
 
     .textindex{ 
-        @include parrafo (25px, 'Sofia Sans Extra Condensed' sans-serif, #16161a);
-        text-align: center; }
-        
+        @include parrafo (25px, $fontfamilyh1, #16161a);
+        text-align: center; 
+    }
+    
     .textindex::first-letter {
-        color: rgb(41, 41, 240) ;
-        font-size: 60px;}
-        
+        @include parrafo (50px, $fontfamilyh1,rgb(41, 41, 240));
+    }
+    
     .imageindex1 {
-        border-radius: 40px;}
-        
+        border-radius: 40px;
+    }
+    
     .maingrid {
-        @include grid (grid, 100%, 1200px, repeat(6, 1fr), repeat(8, 1fr))}
-        
+        @include grid (grid, 100%, 1250px, repeat(6, 1fr), repeat(8, 1fr))
+    }
+    
     .item1 {
-        /*navbar*/ @include grid-item (1, 2, 1, 8);
-        align-self: center}
+        /*navbar*/ @include grid-item (1, 2, 3, 4);
+        align-self: center;
+    }
         
     .item2 {
-        /*imaganes de artistas*/ @include grid-item (2, 7, 1, 2); 
-        @include flex (none, 150px, none, flex, space-between, center)}
-        
+        /*imaganes de artistas*/ @include grid-item (1, 7, 1, 2); 
+        @include flex (none, 150px, none, flex, space-between, center)
+    }
+    
     .item3 {/*textoprincipal*/ 
-        @include grid-item (2, 4, 4, 5)}
-        
+        @include grid-item (2, 4, 3, 4);
+        display: flex;
+        align-items: center;
+    }
+    
     .item4 {
-        /* imagen principal*/ @include grid-item (5, 7, 2, 7)}
-        
+        /* imagen principal*/ @include grid-item (5, 7, 2, 7)
+    }
+    
     .item5 { 
-        /*texto de fondo*/ @include grid-item  (4, 5, 6, 8)}
-        
+        /*texto de fondo*/ @include grid-item  (4, 5, 6, 8);
+        @include parrafo (25px, $fontfamilytext, #15A7B4);
+    }
+    
     .item6 { 
-        /*imagen de fondo*/ @include grid-item (5, 6, 8, 9)}
+        /*imagen de fondo*/ @include grid-item (5, 6, 8, 9);
+    }
+
         
         /*Main de Album*/
-        
-    .albumtext1 h1 { 
-        @include parrafo (30px,'Sofia Sans Extra Condensed' sans-serif, #16161a); 
-        text-align: center;
-    }
-    .albumtext1 h1::first-letter { 
-        @include parrafo (60px, none, rgb(41, 41, 240))}
     
-    .alcar p { 
-        /*titulo del album*/ @include parrafo (30 px, 'Roboto Mono' monospace, #2cb67d) }
-        
-    .alcar article { 
-        @include parrafo (20px,'Sofia Sans Extra Condensed' sans-serif, #16161a ) }
-        
     .albumgrid { /*grid de la pagina album*/ 
-        @include grid ( grid, 100%, 2000px, repeat(3, 1fr,), repeat(6, 1fr))}
-        
+        @include grid ( grid, 100%, 2000px, repeat(3, 1fr,), repeat(6, 1fr))
+    }
+    
     .albumnav { /* nav bar de la pagina album*/
-        @include grid-item ( 1 , 2, 1 , 3) }
-        
+        @include grid-item ( 1 , 2, 1 , 2) 
+    }
+    
     .albuminicio { /* introduccion de la pagina album*/  
-        @include grid-item ( 2 , 4, 1 , 2) }
-        
+        @include grid-item ( 2 , 4, 1 , 2);
+        @include parrafo (25px, $fontfamilyh1, none);
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        } 
         /* card o secciones de la pagina album */
+    .albuminicio ::first-letter {
+            @include parrafo (50px, $fontfamilyh1,rgb(41, 41, 240));
+    }
+
+    
         
     .alcar { /*Sección secunario dnde se desgloza el album, su imagen y breve reseña musical*/
         display: flex;
@@ -74,104 +89,121 @@ main {
         padding: 1px 30px; 
         }
         
+    .alcar article { 
+        @include parrafo (30px, $fontfamilyh1, #16161a ) 
+        }
+
+    .alcar p {
+        @include parrafo (35px, $fontfamilytext, red)
+        }
+    
     .albumcard1 { 
-        @include grid-item (1 , 4, 2 , 3) }
+        @include grid-item (1 , 4, 2 , 3) 
+    }
 
     .albumcard2 { 
-        @include grid-item (1 , 4,  3, 4) }
+        @include grid-item (1 , 4,  3, 4) 
+    }
 
     .albumcard3 { 
-        @include grid-item (1 , 4, 4 , 5) }
+        @include grid-item (1 , 4, 4 , 5) 
+    }
 
     .albumcard4 { 
-        @include grid-item (1 , 4, 5 , 6) }
+        @include grid-item (1 , 4, 5 , 6) 
+    }
 
     .albumcard5 { 
-        @include grid-item (1 , 4, 6 , 7) }
+        @include grid-item (1 , 4, 6 , 7) 
+    }
 
-    
-    .albuminicio { /*Sección principal de la pagina: Album*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-        padding: 20px;
-        }
-            
+
             /*MAIN de Records*/
-    .record-index h1 {
-        @include parrafo (38px, 'Sofia Sans Extra Condensed' sans-serif, #16161a)}
+    
+    .record-index { /*Grid de la pagina record*/
+        @include grid (grid, 100%, 3100px, repeat(4, 1fr), repeat(4, 1fr))
+    }
+
+    .record-index h1 { /*texto inicial de la pagina*/
+        @include parrafo (27px, $fontfamilyh1, #16161a)
+    }
 
     .record-index h1::first-letter{ 
-        @include parrafo (60px, none, rgb(41, 41, 240))}
+        @include parrafo (40px, none, rgb(41, 41, 240))
+    }
 
-    .record-index article { 
-        @include parrafo (30px, 'Sofia Sans Extra Condensed' sans-serif, #16161a)}
+    .record-index article { /*texto de la descripcion de los diferentes records*/
+        @include parrafo (30px, $fontfamilytext, #16161a)
+    }
 
-    .imgrecordinicio { /*imagen del inicio*/
-        width: 15%;
-        border-radius: 10%;}
-
-    .record-index { /*Grid de la pagina record*/
-        @include grid (grid, 100%, none, repeat(4, 1fr), repeat(4, 1fr))}
-        
-    .navbar-record { 
-        @include grid-item ( 1 , 2, 1 , 2)}
-
-    .navbar-record {   
-        padding-right: 50px;
-        color: #16161a;}
-        
     .record-inicio { 
         @include flex (100%, 200px, none, flex, none, none);
-        gap: 20px;
+        gap: 10px;
         flex-direction: row;
         align-self: center;
-        @include grid-item (2 , 5, 1 , 2)
+        text-align: center;
+        @include grid-item (2 , 5, 1 , 2);
         }
+
+    .imgrecordinicio { /*imagen del inicio*/
+        width: 25%;
+        border-radius: 10%;
+    }
+    
+    .navbar-record { 
+        @include grid-item ( 1 , 2, 1 , 2);
+        margin: 50px;
+        color: #16161a;
+    }
 
     .cardrecord-1 {
         @include grid-item (1 , 5, 2 , 3);
-        padding: 30px;
-        padding-bottom: none;
+        margin: 20px;
     }
 
     .cardrecord-2 {
         @include grid-item (1 , 5, 3 , 4);
-        padding: 30px;
-        padding-bottom: none;}
+        margin: 20px;
+}
 
     .cardrecord-3 {
         @include grid-item (1 , 5, 4 , 5);
-        padding: 30px;
-        padding-bottom: none;}
+        margin: 20px;
+    }
 
     .record-index div img {
-        border-radius: 15%;}
+        border-radius: 15%;
+    }
 
             /*MAIN de Tours*/ 
     .tourinicio {
         @include flex(none, none, #8a94ac, flex, space-between, none);
         flex-direction: row;
-        padding: 30px;}
+        padding: 30px;
+    }
 
     .tourinicio img {
-        border-radius: 20px;}
+        border-radius: 20px;
+    }
         
     .tourindex h1 { 
-        @include parrafo (50px, 'Roboto Mono' monospace, #16161a);
-        @include diseñoparrafo (20px, underline, double, #3c4049, 30px)}
+        @include parrafo (50px, $fontfamilyh1, #16161a);
+        @include diseñoparrafo (20px, underline, double, #3c4049, 30px)
+    }
 
     .tourindex article { 
-        @include parrafo (30px,'Sofia Sans Extra Condensed' sans-serif, none)}
+        @include parrafo (30px, $fontfamilytext, none)
+    }
 
     .tourindex {
         display: flex;
         flex-direction: column;
         gap: 40px;
         padding-left: 20px;
-        padding-right: 30px}
+        padding-right: 30px
+    }
 
             /*MAIN de Streaming*/
     .footerstreaming{
-        height: 100%; }
+        height: 100%; 
+    }

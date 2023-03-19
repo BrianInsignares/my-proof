@@ -1,17 +1,36 @@
-.header-index h1 {
-    @include parrafo (60px,'Roboto Mono' monospace,#fffffe )
-    }
+.header-index {
+    background-image: linear-gradient(to bottom, #16161a, #36333C, #5A5361);
+    @include grid (grid, 100%, 400px, repeat(3, 1fr), repeat(3, 1fr));
+    
+}
 
-#tittle {
+.logoprincipal {
+    @include ancholargo (100px, 100px);
+    margin: 20px;
+    @include grid-item (1, 2, 1, 2)
+}
+
+.header-index h1 {
+    @include parrafo (80px, $fontfamilyh1, #fffffe);
+    @include grid-item (2, 3, 2, 3);
     display: flex;
     align-items: center;
+    }
+
+.parrafoindex {
+    @include parrafo (35px, $fontfamilyh1, $colorlogoh1);
+    @include grid-item (2, 3, 3, 4);
 }
 
-.parrafe {
-    @include parrafo (24px, 'Sofia Sans Extra Condensed' sans-serif, $colorparrafe)
-
+.logoindex {
+    @include ancholargo (64px, 64px);
+    @include grid-item (3, 4, 2, 4);
 }
 
-.header-index {
-    @include flex (100%, 300px, $background-colorheader, flex, space-between, normal)
+.logoin {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
 }

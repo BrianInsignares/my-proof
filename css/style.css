@@ -4,28 +4,57 @@
   padding: 0;
   box-sizing: border-box; }
 
-.header-index h1 {
-  font-size: 60px;
-  font-family: "Roboto Mono" monospace;
-  color: #fffffe; }
+.header-index {
+  background-image: linear-gradient(to bottom, #16161a, #36333C, #5A5361);
+  display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
 
-#tittle {
+.logoprincipal {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.header-index h1 {
+  font-size: 80px;
+  font-family: "K2D", sans-serif;
+  color: #fffffe;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   display: flex;
   align-items: center; }
 
-.parrafe {
-  font-size: 24px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
-  color: #2cb67d; }
+.parrafoindex {
+  font-size: 35px;
+  font-family: "K2D", sans-serif;
+  color: #00C6C2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; }
 
-.header-index {
-  /*flex aplicado al header*/
-  width: 100%;
-  height: 300px;
-  background-color: #16161a;
+.logoindex {
+  width: 64px;
+  height: 64px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4; }
+
+.logoin {
+  margin: 5px;
   display: flex;
-  justify-content: space-between;
-  align-items: normal; }
+  flex-direction: column;
+  justify-content: end;
+  align-items: center; }
 
 main {
   background-color: #3C71CC; }
@@ -36,13 +65,14 @@ main {
 
 .textindex {
   font-size: 25px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  font-family: "K2D", sans-serif;
   color: #16161a;
   text-align: center; }
 
 .textindex::first-letter {
-  color: #2929f0;
-  font-size: 60px; }
+  font-size: 50px;
+  font-family: "K2D", sans-serif;
+  color: #2929f0; }
 
 .imageindex1 {
   border-radius: 40px; }
@@ -50,7 +80,7 @@ main {
 .maingrid {
   display: grid;
   width: 100%;
-  height: 1200px;
+  height: 1250px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -58,13 +88,13 @@ main {
   /*navbar*/
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
   align-self: center; }
 
 .item2 {
   /*imaganes de artistas*/
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -80,8 +110,10 @@ main {
   /*textoprincipal*/
   grid-column-start: 2;
   grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 5; }
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  align-items: center; }
 
 .item4 {
   /* imagen principal*/
@@ -95,7 +127,10 @@ main {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 6;
-  grid-row-end: 8; }
+  grid-row-end: 8;
+  font-size: 25px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: #15A7B4; }
 
 .item6 {
   /*imagen de fondo*/
@@ -105,28 +140,6 @@ main {
   grid-row-end: 9; }
 
 /*Main de Album*/
-.albumtext1 h1 {
-  font-size: 30px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
-  color: #16161a;
-  text-align: center; }
-
-.albumtext1 h1::first-letter {
-  font-size: 60px;
-  font-family: none;
-  color: #2929f0; }
-
-.alcar p {
-  /*titulo del album*/
-  font-size: 30 px;
-  font-family: "Roboto Mono" monospace;
-  color: #2cb67d; }
-
-.alcar article {
-  font-size: 20px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
-  color: #16161a; }
-
 .albumgrid {
   /*grid de la pagina album*/
   display: grid;
@@ -140,16 +153,30 @@ main {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 3; }
+  grid-row-end: 2; }
 
 .albuminicio {
   /* introduccion de la pagina album*/
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2; }
+  grid-row-end: 2;
+  font-size: 25px;
+  font-family: "K2D", sans-serif;
+  color: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px; }
 
 /* card o secciones de la pagina album */
+.albuminicio ::first-letter {
+  font-size: 50px;
+  font-family: "K2D", sans-serif;
+  color: #2929f0; }
+
 .alcar {
   /*Sección secunario dnde se desgloza el album, su imagen y breve reseña musical*/
   display: flex;
@@ -158,6 +185,16 @@ main {
   align-items: center;
   gap: 20px;
   padding: 1px 30px; }
+
+.alcar article {
+  font-size: 30px;
+  font-family: "K2D", sans-serif;
+  color: #16161a; }
+
+.alcar p {
+  font-size: 35px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: red; }
 
 .albumcard1 {
   grid-column-start: 1;
@@ -189,51 +226,30 @@ main {
   grid-row-start: 6;
   grid-row-end: 7; }
 
-.albuminicio {
-  /*Sección principal de la pagina: Album*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px; }
-
 /*MAIN de Records*/
-.record-index h1 {
-  font-size: 38px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
-  color: #16161a; }
-
-.record-index h1::first-letter {
-  font-size: 60px;
-  font-family: none;
-  color: #2929f0; }
-
-.record-index article {
-  font-size: 30px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
-  color: #16161a; }
-
-.imgrecordinicio {
-  /*imagen del inicio*/
-  width: 15%;
-  border-radius: 10%; }
-
 .record-index {
   /*Grid de la pagina record*/
   display: grid;
   width: 100%;
-  height: none;
+  height: 3100px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
-.navbar-record {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2; }
+.record-index h1 {
+  /*texto inicial de la pagina*/
+  font-size: 27px;
+  font-family: "K2D", sans-serif;
+  color: #16161a; }
 
-.navbar-record {
-  padding-right: 50px;
+.record-index h1::first-letter {
+  font-size: 40px;
+  font-family: none;
+  color: #2929f0; }
+
+.record-index article {
+  /*texto de la descripcion de los diferentes records*/
+  font-size: 30px;
+  font-family: "Edu NSW ACT Foundation", cursive;
   color: #16161a; }
 
 .record-inicio {
@@ -244,37 +260,48 @@ main {
   display: flex;
   justify-content: none;
   align-items: none;
-  gap: 20px;
+  gap: 10px;
   flex-direction: row;
   align-self: center;
+  text-align: center;
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2; }
+
+.imgrecordinicio {
+  /*imagen del inicio*/
+  width: 25%;
+  border-radius: 10%; }
+
+.navbar-record {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 50px;
+  color: #16161a; }
 
 .cardrecord-1 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding: 30px;
-  padding-bottom: none; }
+  margin: 20px; }
 
 .cardrecord-2 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  padding: 30px;
-  padding-bottom: none; }
+  margin: 20px; }
 
 .cardrecord-3 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 4;
   grid-row-end: 5;
-  padding: 30px;
-  padding-bottom: none; }
+  margin: 20px; }
 
 .record-index div img {
   border-radius: 15%; }
@@ -296,7 +323,7 @@ main {
 
 .tourindex h1 {
   font-size: 50px;
-  font-family: "Roboto Mono" monospace;
+  font-family: "K2D", sans-serif;
   color: #16161a;
   font-weight: 20px;
   text-decoration-line: underline;
@@ -306,7 +333,7 @@ main {
 
 .tourindex article {
   font-size: 30px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  font-family: "Edu NSW ACT Foundation", cursive;
   color: none; }
 
 .tourindex {
@@ -331,7 +358,7 @@ li {
 
 .navbar {
   font-size: 40px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  font-family: "K2D", sans-serif;
   color: #16161a; }
 
 .navbar {
@@ -350,12 +377,17 @@ li {
 
 .footer-index {
   width: 100%;
-  height: 150px;
+  height: 250px;
   background-color: #72757e; }
+
+.parrafe {
+  font-size: 40px;
+  font-family: "K2D", sans-serif;
+  color: #00C6C2; }
 
 .parrafeemail {
   font-size: 30px;
-  font-family: "Sofia Sans Extra Condensed" sans-serif;
+  font-family: "Edu NSW ACT Foundation", cursive;
   color: #16161a;
   display: flex;
   justify-content: end; }
@@ -363,11 +395,14 @@ li {
 .logosfooter {
   display: flex;
   flex-direction: row;
-  gap: 15px 5px; }
+  padding: 25px 15px; }
   .logosfooter li a {
     text-decoration: none; }
   .logosfooter li {
     list-style: none; }
+
+.logosfoo {
+  margin: 10px; }
 
 @media (max-width: 1024px) {
   /*INDEX*/
@@ -407,7 +442,8 @@ li {
   .textindex {
     font-size: 20;
     font-family: "K2D", sans-serif;
-    color: none; }
+    color: none;
+    margin: 10px; }
   .maingrid {
     display: grid;
     width: 100%;
@@ -461,12 +497,17 @@ li {
   .record-index {
     /*flex aplicado al header*/
     width: 100%;
-    height: 2600px;
+    height: 2800px;
     background-color: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+  .navbar-record {
+    margin: 30px;
+    margin-top: 10px; }
+  .cardrere {
+    margin-top: 20px; }
   /*STREAMING*/
   .navbarstre {
     height: 400px; }

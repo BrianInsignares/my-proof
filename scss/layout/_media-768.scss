@@ -9,7 +9,8 @@
     }
 
     .textindex { 
-        @include parrafo (20, $fontfamilymedia, none)
+        @include parrafo (20, $fontfamilymedia, none);
+        margin: 10px
     }
     .maingrid {
         @include grid (grid, 100%, 1300px, repeat(4, 1fr), repeat(7, 1fr))}
@@ -47,8 +48,16 @@
             /*RECORDS*/
     
     .record-index{
-        @include flex(100%, 2600px, none, flex, center, center);
+        @include flex(100%, 2800px, none, flex, center, center);
         flex-direction: column;
+    }
+    .navbar-record {
+        margin: 30px;
+        margin-top: 10px;
+    }
+
+    .cardrere {
+        margin-top: 20px;
     }
 
             /*STREAMING*/

@@ -7,6 +7,12 @@
     align-items: $aligni;
 }
 
+@mixin ancholargo ($width, $height) {
+    width: $width;
+    height: $height;
+}
+    
+
 @mixin parrafo ($fontsize, $fontfamily, $color){
     font-size: $fontsize;
     font-family: $fontfamily;
