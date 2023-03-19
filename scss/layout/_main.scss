@@ -3,7 +3,14 @@ main {
 }
 
             /*MAIN DEL INDEX */
-    .card{ border-radius: 50px;
+
+    .card{ 
+        border-radius: 50px; 
+        margin: 20px;
+    }
+
+    .card:hover {
+        transform: scale(1.5)
     }
 
     .textindex{ 
@@ -32,6 +39,7 @@ main {
         /*imaganes de artistas*/ @include grid-item (1, 7, 1, 2); 
         @include flex (none, 150px, none, flex, space-between, center)
     }
+
     
     .item3 {/*textoprincipal*/ 
         @include grid-item (2, 4, 3, 4);
@@ -97,6 +105,9 @@ main {
         @include parrafo (35px, $fontfamilytext, red)
         }
     
+    .alcar img:hover {
+        transform: rotate(40deg);
+    }
     .albumcard1 { 
         @include grid-item (1 , 4, 2 , 3) 
     }

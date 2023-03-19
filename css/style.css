@@ -61,7 +61,11 @@ main {
 
 /*MAIN DEL INDEX */
 .card {
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin: 20px; }
+
+.card:hover {
+  transform: scale(1.5); }
 
 .textindex {
   font-size: 25px;
@@ -195,6 +199,9 @@ main {
   font-size: 35px;
   font-family: "Edu NSW ACT Foundation", cursive;
   color: red; }
+
+.alcar img:hover {
+  transform: rotate(40deg); }
 
 .albumcard1 {
   grid-column-start: 1;
@@ -383,14 +390,16 @@ li {
 .parrafe {
   font-size: 40px;
   font-family: "K2D", sans-serif;
-  color: #00C6C2; }
+  color: #00C6C2;
+  margin-left: 20px; }
 
 .parrafeemail {
   font-size: 30px;
   font-family: "Edu NSW ACT Foundation", cursive;
   color: #16161a;
   display: flex;
-  justify-content: end; }
+  justify-content: end;
+  margin: 20px; }
 
 .logosfooter {
   display: flex;

@@ -5,13 +5,15 @@
 }
 
 .parrafe {
-    @include parrafo (40px, $fontfamilyh1, $colorlogoh1)
+    @include parrafo (40px, $fontfamilyh1, $colorlogoh1);
+    margin-left: 20px
 }
 
 .parrafeemail {
     @include parrafo (30px, $fontfamilytext, #16161a);
     display: flex;
     justify-content: end;
+    margin: 20px;
 }
 
 .logosfooter {
