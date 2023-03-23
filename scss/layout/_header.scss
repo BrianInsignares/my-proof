@@ -5,32 +5,42 @@
 }
 
 .logoprincipal {
-    @include ancholargo (100px, 100px);
+    @include ancholargo (150px, 150px);
     margin: 20px;
-    @include grid-item (1, 2, 1, 2)
+    @include grid-item (1, 2, 1, 2);
+    border-radius: 50%;
 }
 
 .header-index h1 {
     @include parrafo (80px, $fontfamilyh1, #fffffe);
-    @include grid-item (2, 3, 2, 3);
+    @include grid-item (2, 3, 1, 2);
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: center
+    /*display: flex;
+    align-items: center;*/
     }
 
 .parrafoindex {
-    @include parrafo (35px, $fontfamilyh1, $colorlogoh1);
-    @include grid-item (2, 3, 3, 4);
+    @include parrafo (35px, $fontfamilytext, $colorlogoh1);
+    @include grid-item (2, 3, 2, 3);
+    text-align: center;
 }
 
 .logoindex {
-    @include ancholargo (64px, 64px);
-    @include grid-item (3, 4, 2, 4);
+    @include ancholargo (30px, 30px);
+    @include grid-item (3, 4, 3, 4);
+    gap:-10px;
 }
 
 .logoin {
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    margin: 20px;
 }
+
+.logoindex {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+

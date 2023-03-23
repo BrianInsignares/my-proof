@@ -1,5 +1,5 @@
 main {
-    background-color:$background-colormain;
+    background-image: linear-gradient(to bottom,  #558496, #56969B)
 }
 
             /*MAIN DEL INDEX */
@@ -14,8 +14,9 @@ main {
     }
 
     .textindex{ 
-        @include parrafo (25px, $fontfamilyh1, #16161a);
-        text-align: center; 
+        @include parrafo (23px, $fontfamilyh1, #16161a);
+        margin-left: 20px;
+        text-align: left; 
     }
     
     .textindex::first-letter {
@@ -27,12 +28,14 @@ main {
     }
     
     .maingrid {
-        @include grid (grid, 100%, 1250px, repeat(6, 1fr), repeat(8, 1fr))
+        @include grid (grid, 100%, 1600px, repeat(6, 1fr), repeat(8, 1fr));
+    
     }
     
     .item1 {
-        /*navbar*/ @include grid-item (1, 2, 3, 4);
+        /*navbar*/ @include grid-item (1, 2, 2, 3);
         align-self: center;
+        padding: 20px;
     }
         
     .item2 {
@@ -42,22 +45,26 @@ main {
 
     
     .item3 {/*textoprincipal*/ 
-        @include grid-item (2, 4, 3, 4);
-        display: flex;
-        align-items: center;
+        @include grid-item (2, 5, 2, 4);
+        width: 100%;
+        
     }
     
     .item4 {
-        /* imagen principal*/ @include grid-item (5, 7, 2, 7)
+        /* imagen principal*/ @include grid-item (6, 7, 2, 7);
+        padding-right: 20px;
+        
     }
     
     .item5 { 
-        /*texto de fondo*/ @include grid-item  (4, 5, 6, 8);
-        @include parrafo (25px, $fontfamilytext, #15A7B4);
+        /*texto de fondo*/ @include grid-item  (2, 5, 4, 6);
+        @include parrafo (25px, $fontfamilytext, #16161a);
     }
     
     .item6 { 
-        /*imagen de fondo*/ @include grid-item (5, 6, 8, 9);
+        /*imagen de fondo*/ @include grid-item (1, 7, 8, 9);
+        
+        
     }
 
         
@@ -132,7 +139,8 @@ main {
             /*MAIN de Records*/
     
     .record-index { /*Grid de la pagina record*/
-        @include grid (grid, 100%, 3100px, repeat(4, 1fr), repeat(4, 1fr))
+        @include grid (grid, 100%, 3100px, repeat(4, 1fr), repeat(4, 1fr));
+        
     }
 
     .record-index h1 { /*texto inicial de la pagina*/

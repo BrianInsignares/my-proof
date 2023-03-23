@@ -1,19 +1,21 @@
 .footer-index {
-    width: 100%;
-    height: 250px;
     background-color: $background-colorfooter;
+    @include grid (grid, 100%, 150px, repeat(2, 1fr), repeat(2, fr))
 }
 
 .parrafe {
     @include parrafo (40px, $fontfamilyh1, $colorlogoh1);
-    margin-left: 20px
+    margin-left: 20px;
+    @include grid-item (1 , 2 , 1 , 2);
 }
 
 .parrafeemail {
     @include parrafo (30px, $fontfamilytext, #16161a);
     display: flex;
     justify-content: end;
-    margin: 20px;
+    line-height: 85%;
+    padding: 30px, 20px, none, none;
+    @include grid-item (2, 3, 2, 3);
 }
 
 .logosfooter {
