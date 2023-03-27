@@ -1,9 +1,18 @@
 @media (max-width: 1024px) {
             /*INDEX*/
 
+    .header-index {
+        height: 340px;
+    }
+
+    .header-index h1 {
+        /*titulo principail*/
+        font-size: 60px;
+    }
+
     .item2 {
-        grid-column-start: 2;
-        grid-column-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 7;
     }
 
     .imageindex1 {
@@ -12,7 +21,7 @@
     
             /*ALBUM*/
 
-    .albuminicio h1 {
+    /* .albuminicio h1 {
         font-size: 30px;
     }
 
@@ -22,8 +31,8 @@
 
     .alcar article {
         @include parrafo (25px, none, none)
-    }
-            /*RECORDS*/
+    } 
+            /*RECORDS
     
     .imgrecordinicio {
         height: 200px;
@@ -33,10 +42,10 @@
         @include parrafo (30px, $fontfamilymedia, none) 
         }
     
-            /*STREAMING*/
+            /*STREAMING
     .footerstreaming {
         height: 200px;
-    }
+    } */
 
 
 

@@ -1,19 +1,50 @@
 @media (max-width: 320px){
 
+    /*Header*/
+    .header-index{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-index h1 {
+        font-size: 40px
+    }
+
+    .parrafeindex {
+        font-size: 50px;
+        font-family: $fontfamilyh1;
+        text-align: center;
+    }
+
+    .logoindex {
+        
+        margin: 10px
+    }
+
     /*INDEX*/
-.maingrid {
-    height: 2200px;
-}
+    .maingrid {
+        @include flex(100%, 3300px, none, flex, center, center);
+        flex-direction: column;
+        
+        gap: 30px;
+    }
 
-.item2 {
-    display: flex; /*NO LO TOMA*/
-    flex-direction: column;
-}
+    .imagenportada {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
 
-.imagenindex { /*NO LO TOMA*/
-    width: 100px;
-    height: 300px;
-}
+    .imageprincipal {
+        margin: 10px;
+        width: 80%;
+    }
+
+    .textindex {
+        margin:20px
+    }
+
             /*ALBUM*/
     
     .albumgrid {

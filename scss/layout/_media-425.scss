@@ -1,24 +1,43 @@
 @media (max-width: 425px){
+        /*Header*/
+    .header-index{
+        height: 350px;
+    }
 
-    .parrafe {
-        @include parrafo (16px, $fontfamilymedia, none )
-    }
     .header-index h1 {
-        font-size: 40px;
+        font-size: 45px
     }
-    .maingrid {
-        @include flex(100%, 2000px, none, flex, center, center);
+
+    .parrafeindex {
+        font-size: 60px;
+        font-family: $fontfamilyh1;
+        text-align: center;
+    }
+
+        /*FOOTER*/
+    .footer-index {
+        @include flex (100%, 250px, none, flex, center, center);
         flex-direction: column;
+    }
+
+                /*INDEX*/
+    
+    .maingrid {
+        @include flex(100%, 2900px, none, flex, center, center);
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         gap: 50px;
     }
 
-    .textindexs {
-        @include parrafo (20px, $fontfamilymedia, #16161a)
+    .imagenportada {
+        display: flex;
+        flex-wrap: wrap;
     }
 
             /*ALBUM*/
     .albumgrid {
-        @include flex (100%, 3400px, none, flex, center, center);
+        @include flex (100%, 5400px, none, flex, center, center);
         flex-direction: column;
     }
 
@@ -31,40 +50,43 @@
         @include flexmedia (flex, column)
     }
 
+    .textalbumpri {
+        margin: 20px
+    }
+
             /*RECORD*/
     
-    .record-index {
-        height: 4000px;
+    .record-index { 
+        @include flex (100%, 100%, none, flex, center, center);
+        flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
     }
 
-    .record-index article {
-        @include parrafo (15, $fontfamilymedia, none)
-    }
-
-    .navbar {
-        font-size: 42px;
-        width: 300px;
-        height: 500px;
-        padding-top: none; /*TOMA MUCHO ESPACIO*/
-    }
-
-    .record-inicio {
-        @include flexmedia (flex, column)
-    }
     .imgrecordinicio {
-        width: 60px;
-        height: 60px;
+        width: 80%;
+    }
+
+    .cardrere {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .cardrere img {
+        width: 90%;
     }
 
             /*STREAMING*/
+    
     .parrafeemail {
         @include parrafo (18px, $fontfamilymedia, none)
     }
 
+
             /*TOURS*/
     .toursindex img {
-        width: 100%;
+        width: 80%; 
     }
     
 }

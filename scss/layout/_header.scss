@@ -1,6 +1,6 @@
 .header-index {
     background-image: linear-gradient(to bottom, #16161a, #36333C, #5A5361);
-    @include grid (grid, 100%, 400px, repeat(3, 1fr), repeat(3, 1fr));
+    @include grid (grid, 100%, 300px, repeat(3, 1fr), repeat(2, 1fr));
     
 }
 
@@ -25,12 +25,14 @@
     @include parrafo (35px, $fontfamilytext, $colorlogoh1);
     @include grid-item (2, 3, 2, 3);
     text-align: center;
+    margin:20px
 }
 
 .logoindex {
     @include ancholargo (30px, 30px);
-    @include grid-item (3, 4, 3, 4);
+    @include grid-item (3, 4, 2, 3);
     gap:-10px;
+    margin:20px
 }
 
 .logoin {

@@ -1,76 +1,153 @@
 @media (max-width: 768px){
 
             /*INDEX*/
-    
-    .navbar {
-        width: 200px;
-        height: 350px;
-        font-size: 30px; 
+
+    .header-index {
+        height: 370px;
     }
 
+    .maingrid {
+        @include grid (grid, 100%, 1750px, repeat(3, 1fr), repeat(5, 1fr));
+    }
+    
     .textindex { 
         @include parrafo (20, $fontfamilymedia, none);
         margin: 10px
     }
-    .maingrid {
-        @include grid (grid, 100%, 1300px, repeat(4, 1fr), repeat(7, 1fr))}
+    .item1 { /*navbar*/ 
+        @include grid-item (1 , 2 , 2, 3);
+        width: 100%
+    }
 
-    .item1 {
-        /*navbar*/ @include grid-item (1, 2, 1, 3);}
-        
-    .item2 {
-        /*imaganes de artistas*/ @include grid-item (2, 5, 2, 3);
-        height: 50px;}
-        
-    .item3 {/*textoprincipal*/ 
-        @include grid-item (1, 3, 3, 5);
-        }
-        
-    .item4 {
-        /* imagen principal*/ @include grid-item (3, 5, 3, 5)}
-        
-    .item5 { 
-        /*texto de fondo*/ @include grid-item  (1, 3, 6, 7)}
-        
-    .item6 { 
-        /*imagen de fondo*/ @include grid-item (1, 3, 7 , 8)}
-        
-            /*ALBUM*/
+    .item3 {/*textoprincipal*/
+        @include grid-item (1, 4, 3, 4);
+    }
     
-        .albumnav {
-            height: 600px; /*NO LO TOMA*/
-        }
-        .albuminicio h1{
-            font-size: 20px;
-        }
+    .item4 { /* imagen principal*/ 
+        @include grid-item (3, 4, 2, 3);
+        width: 100%;
+    }
+    
+    .item5 { /*texto de fondo*/
+        @include grid-item  (1, 2, 4, 5)
+    }
+
+    .item6 {/*spotify*/ 
+        @include grid-item ( 3, 4, 4 , 5);
+        margin: 20px
+    }
+    
+    .item7 { /*imagen de fondo*/ 
+        @include grid-item (1, 4, 5, 6);
+    }
+
+
+            /*ALBUM*/
+            
+    .albumgrid { /*grid de la pagina album*/ 
+    @include grid ( grid, 100%, 3400px, repeat(3, 1fr,), repeat(7, 1fr))
+    }
+    
+    .albumnav {
+        @include grid-item (1, 2, 1, 2)
+    }
+
+    .textalbumpri {
+        @include grid-item (2 , 3, 1, 2)
+    }
+
+    .imgalbumm {
+        @include grid-item (2, 3, 2, 3)
+    }
+
+    .albumcard1 {
+        @include grid-item (1, 4, 3, 4)
+    }
+
+    .albumcard2 {
+        @include grid-item (1, 4, 4, 5)
+    }
+
+    .albumcard3 {
+        @include grid-item (1, 4, 5, 6)
+    }
+
+    .albumcard4 {
+        @include grid-item (1, 4, 6, 7)
+    }
+
+    .albumcard5 {
+        @include grid-item (1, 4, 7, 8)
+    }
+
+
 
 
             /*RECORDS*/
-    
-    .record-index{
-        @include flex(100%, 2800px, none, flex, center, center);
-        flex-direction: column;
-    }
-    .navbar-record {
-        margin: 30px;
-        margin-top: 10px;
+    .record-index { /*Grid de la pagina record*/
+        @include grid (grid, 100%, 3150px, repeat(3, 1fr), repeat(5, 1fr));
     }
 
-    .cardrere {
-        margin-top: 20px;
+    .navbar-record{
+        @include grid-item (1, 2, 1, 2)
+    } 
+
+    .htextpri {
+        @include grid-item (2, 3, 2, 3);
+    }
+
+    .record-index img {
+        @include grid-item (1 , 4 , 1, 2);
+        width: 100%;
+    }
+    .cardrecord-1{
+        @include grid-item(1, 4, 3, 4);
+        .cardrecord-1 img {
+            width: 60%
+        }
+    }
+    .cardrecord-2{
+        @include grid-item(1, 4, 4, 5);
+        .cardrecord-2 img {
+            width: 60%
+        }
+    }
+    .cardrecord-3{
+        @include grid-item(1, 4, 5, 6);
+        .cardrecord-3 img {
+            width: 60%;
+            margin: none
+        }
     }
 
             /*STREAMING*/
-    .navbarstre {
+    .header-index{
         height: 400px;
     }
-
-    /*TOURS*/
-
-    .tourinicio {
-        flex-direction: column;
+    .logoprincipal {
+        width: 80px;
+        height: 80px
     }
+    .logoindex {
+        width: 15px;
+    }
+
+    .parrafoindex {
+        font-size: 10px;
+    }
+
+    .footer-index {
+        height: 220px;
+    }
+
+            /*TOURS*/
+        
+    .tourinicio {
+    flex-direction: column; 
+    gap: 20px
+    }
+
     .navbartour {
-        justify-content: center;
+    justify-content: center;
     }
 }
