@@ -1,5 +1,5 @@
 main {
-    background-image: linear-gradient(to bottom,  #558496, #56969B)
+    background-image: linear-gradient(to bottom,  #00C9AA, #C4FCF0, #4C8077)
 }
 
             /*MAIN DEL INDEX */
@@ -117,7 +117,8 @@ main {
 
     .imgalbumm {
         @include grid-item (3 , 4, 1, 2);
-        padding: 30px;
+        width: 100%;
+        padding: 20px;
     }
 
     .albumcard1 { 
@@ -194,7 +195,7 @@ main {
 
             /*MAIN de Tours*/ 
     .tourinicio {
-        @include flex(none, none, #8a94ac, flex, space-between, none);
+        @include flex(none, none, none, flex, space-between, none);
         flex-direction: row;
         padding: 30px;
     }
